@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Exchange Currency Page</title>
+<meta name="author" content="Bahaa Hayajneh">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta charset="utf-8">
+<script src="mainjava.js">
+
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+a:hover
+{
+color:black;
+
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <div style="margin: 0;background-color:white;" class="container-fluid border  text-dark  row ">
+        <ul class="navbar ">
+        
+        <li class="nav-item"><a  class="text-dark col-sm  " href="index.html">Home</a></li>
+        
+        <li class="nav-item"><a  class="text-dark col-sm " href="sighnup.html">Sign Up</a></li>
+        <li class="nav-item"><a  class="text-dark col-sm " href="login.html">Log In </a></li>
+        <li class="nav-item"><a  class="text-dark col-sm " href="contact.html">Contact</a></li>
+        
+        <form>
+        <input class="col-sm"  type="search" placeholder=" Search...">
+        <button type="button"  class="btn btn-lg btn-dark  text-white "><span class="glyphicon glyphicon-search"></span>Search</button>
+        
+        </form>
+        </ul>
+        </div>
+<br>
+
+
+<div style="height: 60px;" class="progress">
+<div style="width: 100%;font-size: 40px;" class="progress-bar border-lg progress-bar-animated text-center progress-bar-striped bg-primary ">
+    Play With Math
+
+</div>
+
+
+
+</div>
+
+<img   class="img-thumbnail back  mx-auto d-block border img-fluid" src="images/money1.jpg">
+
+
+
+<br><br><br><br>
+
+<br>
+<div style="margin-left: 15%;" class="spinner  spinner-grow spinner-grow-sm text-muted"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-primary"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-danger"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-warning"></div>
+<div style="margin-left: 10%;"  class="spinner spinner-grow spinner-grow-sm text-dark"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-success"></div>
+
+
+<br><br><br>
+
+<div class="container-fluid text-muted">
+<h1 class="text-dark">About Currency Exchange </h1>
+
+<h4>It is a simple tool for converting Jordan  currency 
+    
+    into their equivalent in other countries currencies.</h4>
+
+</div>
+<br><br><br><br>
+
+<div class="container-fluid text-muted border  bg-light">
+    <img style="width: 100%;height: 370px;" class="img-fluid   mx-auto d-block" src="images/cover.png">
+    
+<h3 class="text-dark text-center display-4">Jordan Currency Exchange Calculator</h3><br>
+<form style="font-weight: bold;" class="was-validated">
+    <div class="form-group">
+        <h4 class="text-dark">JD Jordanian</h4>
+<input id="m1" type="text" class="form-control" pattern="^-?\d*\.?\d+$" required placeholder="Enter JD Currency">
+<div class="valid-feedback">Valid Value</div>
+<div class="invalid-feedback">InValid Value</div>
+</div>
+
+<div class="form-group">
+    <div>Dollar American</div>
+<input id="m2" type="text" class="form-control"  placeholder="Equivalent Dollar American Currency">
+
+</div>
+<div class="form-group">
+    <div>SR Saudian</div>
+<input id="m3" type="text" class="form-control"  placeholder="Equivalent SR Saudian Currency">
+
+</div>
+<div class="form-group">
+    <div>AED Emirates</div>
+<input id="m4" type="text" class="form-control"  placeholder="Equivalent AED Emirates Currency">
+
+</div>
+<div class="form-group">
+    <div >Egyptian Pound</div>
+<input id="m5" type="text" class="form-control"  placeholder="Equivalent Egyptian Pound  Currency">
+
+</div>
+<div class="form-group">
+    <div >Bahraini Dinar</div>
+<input id="m6" type="text" class="form-control"  placeholder="Equivalent Bahraini Dinar Currency">
+
+</div>
+
+<div class="form-group">
+    <div >Kuwaiti Dinar</div>
+<input id="m7" type="text" class="form-control"  placeholder="Equivalent Kuwaiti Dinar Currency">
+
+</div>
+<div class="form-group">
+    <div >Euro</div>
+<input id="m8" type="text" class="form-control"  placeholder="Equivalent Euro Currency">
+
+</div>
+<div class="form-group">
+    <div >JPY Japan</div>
+<input id="m9" type="text" class="form-control"  placeholder="Equivalent JPY Japan Currency">
+
+</div>
+
+<div class="form-group">
+    <div >Brazilian Real</div>
+<input id="m10" type="text" class="form-control"  placeholder="Equivalent Brazilian Real Currency">
+
+</div>
+<div class="form-group">
+    <div >Indian Rupees</div>
+<input id="m11" type="text" class="form-control"  placeholder="Equivalent Indian Rupees Currency">
+
+</div>
+<div class="form-group">
+    <div>Russian Ruble</div>
+<input id="m12" type="text" class="form-control"  placeholder="Equivalent Russian Ruble Currency">
+
+</div>
+
+<div class="form-group">
+    <div>Vietnamese Dong</div>
+<input id="m13" type="text" class="form-control"  placeholder="Equivalent Vietnamese Dong Currency">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<button style="width: 100%;" class="btn btn-primary" onclick="f20()" type="button">Convert</button><br><br>
+
+<button style="width: 100%;" class="btn btn-success"  type="reset">Clear</button>
+
+
+</form>
+
+<br><br><br>
+
+
+
+
+</div>
+
+<br><br><br><br><br><br>
+
+
+<div class="container-fluid border bg-light">
+    <br>
+    <div style="margin-left:15%;">
+<img  style="width: 20%;" class="img-fluid border mx-auto  img-thumbnail " src="images/m1.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m2.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math19.jpeg">
+
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m4.jpg">
+</div>
+<div style="margin-left:15%;">
+    <img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math15.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m6.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math7.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math11.jpg">
+</div>
+<div style="margin-left:15%;">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math13.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math14.jpeg">
+
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m7.jpg">
+<img style="width: 20%;" class="img-fluid border mx-auto  img-thumbnail " src="images/m3.jpg">
+
+
+</div>
+
+
+
+<br><br><br><br><br><br>
+
+</div>
+<br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<div class="container-fluid border bg-light ">
+    <br>
+<div style="font-size:40px;" class="text-muted">Share Your Opinion From Here...</div><br>
+<form >
+    <div class="form-group">
+<label class="text-muted">UserName</label><br>
+<input class="form-control" type="text" placeholder="UserName" required><br>
+<div class="valid-feedback">Valid UserName</div>
+
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+
+
+<div class="form-group">
+
+<textarea rows="10" class="form-control" required placeholder="Write Your Comment From Here..."></textarea>
+<div class="valid-feedback">Valid Comment</div>
+
+<div class="invalid-feedback">Please fill out this field.</div>
+
+</div>
+
+<button type="button" style="width: 100%;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+Comment
+</button>
+<br><br>
+<button style="width: 100%;" type="reset" class="btn btn-success ">Clear</button>
+
+</form>
+<br><br><br><br><br><br>
+</div>
+
+</div>
+    
+</div>
+<div>
+
+  <div class="modal fade bg-dark" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank You For Spending Some Times To Share Your Openion ...</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="img-fluid " src="images/Thanksyou.jpg">
+         
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container-fluid bg-light border text-dark ">
+    <br><br>
+    
+    <h1 class="text-center">Contact Me</h1><hr>
+    <h4  class="text-dark text-center">Contact me by social media or Contact page</h4><br><br>
+    <a style="margin-left: 47%;" href="https://twitter.com/BahaaHayajneh2"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/abu_wesam212/"><i class="fa fa-instagram"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=0778343994"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://web.facebook.com/Bahaa.haya99"><i class="fa fa-facebook"></i></a>
+    <br><br><br><br><br><br>
+  
+</div>
+
+
+
+</body>
+
+
+
+
+
+</html>
